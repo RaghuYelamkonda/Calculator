@@ -3,6 +3,7 @@ package calculator.operator;
 import calculator.Calculator;
 import org.apache.log4j.Logger;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
@@ -30,12 +31,12 @@ public abstract class BaseOperator implements IOperator {
         logger.debug("Applying Add operator on " + expression);
     }
 
-    protected Double getValue(String operand, Map<String, Double> contextValues) throws Exception {
+    protected BigDecimal getValue(String operand, Map<String, BigDecimal> contextValues) throws Exception {
         if (contextValues.containsKey(operand)) {
             return contextValues.get(operand);
         }
         try {
-            return Double.parseDouble(operand);
+            return new BigDecimal(operand);
         } catch (NumberFormatException nfe) {
             return calculator.evaluateExpression(operand, contextValues);
         }

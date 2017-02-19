@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="14" failures="0" name="calculator.CalculatorTest" time="0.057" errors="0" skipped="0">
+<testsuite tests="14" failures="0" name="calculator.CalculatorTest" time="0.055" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Apps\Java\jdk1.8.0_111\jre\bin"/>
     <property name="java.vm.version" value="25.111-b14"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\MyDesktop\Examples\calculator"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Deethya\Desktop\A\Calculator"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\MyDesktop\Examples\calculator"/>
+    <property name="user.dir" value="C:\Users\Deethya\Desktop\A\Calculator"/>
     <property name="java.runtime.version" value="1.8.0_111-b14"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Apps\Java\jdk1.8.0_111\jre\lib\endorsed"/>
@@ -63,18 +63,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="calculator.CalculatorTest" name="testTwoOperandSimpleExtractor" time="0.034"/>
+  <testcase classname="calculator.CalculatorTest" name="testTwoOperandSimpleExtractor" time="0.037"/>
   <testcase classname="calculator.CalculatorTest" name="testDivAddMulCombinationWithNegativeNumbers" time="0"/>
-  <testcase classname="calculator.CalculatorTest" name="testLetOperandComplexExtractor" time="0.001"/>
+  <testcase classname="calculator.CalculatorTest" name="testLetOperandComplexExtractor" time="0"/>
   <testcase classname="calculator.CalculatorTest" name="testTwoOperandSimpleComplexExtractor" time="0"/>
   <testcase classname="calculator.CalculatorTest" name="testExpressionWhichContainsoperatorAsVariableName" time="0.001"/>
-  <testcase classname="calculator.CalculatorTest" name="testMultiplicationWhichInvolveZero" time="0.001"/>
-  <testcase classname="calculator.CalculatorTest" name="testUnknownOperatorTest" time="0.014"/>
-  <testcase classname="calculator.CalculatorTest" name="testSimpleExpressionWithAllOperators" time="0.001"/>
-  <testcase classname="calculator.CalculatorTest" name="testWithOutVariableInitialization" time="0"/>
+  <testcase classname="calculator.CalculatorTest" name="testMultiplicationWhichInvolveZero" time="0"/>
+  <testcase classname="calculator.CalculatorTest" name="testUnknownOperatorTest" time="0.011"/>
+  <testcase classname="calculator.CalculatorTest" name="testSimpleExpressionWithAllOperators" time="0"/>
+  <testcase classname="calculator.CalculatorTest" name="testWithOutVariableInitialization" time="0.002"/>
   <testcase classname="calculator.CalculatorTest" name="testTwoOperandComplexExtractor" time="0"/>
-  <testcase classname="calculator.CalculatorTest" name="testSimpleExpressionWithNegativeNumber" time="0"/>
+  <testcase classname="calculator.CalculatorTest" name="testSimpleExpressionWithNegativeNumber" time="0.001"/>
   <testcase classname="calculator.CalculatorTest" name="testExpressionWithoutMatchingBraces" time="0.001"/>
-  <testcase classname="calculator.CalculatorTest" name="testExpressionWhichContainsVariableWhoseScopeExpired" time="0.002"/>
-  <testcase classname="calculator.CalculatorTest" name="testExpressionWithDivisionByZero" time="0.002"/>
+  <testcase classname="calculator.CalculatorTest" name="testExpressionWhichContainsVariableWhoseScopeExpired" time="0.001"/>
+  <testcase classname="calculator.CalculatorTest" name="testExpressionWithDivisionByZero" time="0.001"/>
 </testsuite>

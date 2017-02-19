@@ -11,7 +11,7 @@ public class OperandsExtractor {
     private static Logger logger = Logger.getLogger(OperandsExtractor.class);
 
     public static List<String> getOperands(String expression) throws Exception {
-        List<String> operands = new ArrayList<String>();
+        List<String> operands = new ArrayList<>();
         expression = expression.trim();
         if (expression.isEmpty()) {
             return operands;
@@ -45,7 +45,7 @@ public class OperandsExtractor {
     }
 
     private static void extractNestedOperands(List<String> operands, String expression, int indexOfOpenBrace) throws Exception {
-        Stack<Character> stack = new Stack<Character>();
+        Stack<Character> stack = new Stack<>();
         stack.push(expression.charAt(indexOfOpenBrace));
         StringBuilder sb = new StringBuilder(expression.substring(0, indexOfOpenBrace + 1));
         char[] chars = expression.toCharArray();

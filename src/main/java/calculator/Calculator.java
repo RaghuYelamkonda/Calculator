@@ -6,6 +6,7 @@ import calculator.common.OperatorExtractor;
 import calculator.operator.BaseOperator;
 import org.apache.log4j.*;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,16 +39,13 @@ public class Calculator {
             String expression = args[1];
             ExpressionValidator.validateExpression(expression);
             logger.info("Evaluating expression: " + expression);
-            System.out.println(calculator.evaluateExpression(expression, new HashMap<String, Double>()));
+            System.out.println(calculator.evaluateExpression(expression, new HashMap<>()).toString());
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
 
-    public Double evaluateExpression(String input, Map<String, Double> contextValues) throws Exception {
-        /*if (contextValues.containsKey(input)) {
-            return contextValues.get(input);
-        }*/
+    public BigDecimal evaluateExpression(String input, Map<String, BigDecimal> contextValues) throws Exception {
         BaseOperator operator = OperatorExtractor.getOperator(input);
         String subExpression = OperatorExtractor.getSubExpression(input);
         List<String> operands = OperandsExtractor.getOperands(subExpression);

@@ -18,9 +18,9 @@ public class OperatorTest {
         exception.expect(Exception.class);
         exception.expectMessage("Operands mismatch for Add on 200. Expected 2 but found 1");
         AddOperator addOperator = new AddOperator();
-        ArrayList<String> operands = new ArrayList<String>();
+        ArrayList<String> operands = new ArrayList<>();
         operands.add("200");
         addOperator.setOperands(operands);
-        addOperator.apply(new HashMap<String, Double>());
+        addOperator.apply(new HashMap<>());
     }
 }

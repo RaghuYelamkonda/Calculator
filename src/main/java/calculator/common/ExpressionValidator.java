@@ -14,7 +14,7 @@ public class ExpressionValidator {
     }
 
     private static void validateBraces(String expression) throws Exception {
-        Stack<Character> stack = new Stack<Character>();
+        Stack<Character> stack = new Stack<>();
         for (char aChar : expression.toCharArray()) {
             if (aChar == Constants.openBrace) {
                 stack.push(Constants.openBrace);
