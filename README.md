@@ -14,7 +14,11 @@ This program will take two arguments as input
 1. Log level
 2. Expression
 
+# Continuous Integration
+Travis CI was used to setup continuous integration
 
-#Assumptions/Limitations
+https://travis-ci.org/RaghuYelamkonda/Calculator
+
+# Assumptions/Limitations
 
 While running this from commandprompt you can not give spaces in the expression as java is going to take them as different arguments
