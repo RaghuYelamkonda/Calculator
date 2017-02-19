@@ -17,5 +17,4 @@ This program will take two arguments as input
 
 #Assumptions/Limitations
 
-1. Main limitation with this project is it did not considered the overflow while doing calulation. We have to replace BigDecimal with double in the code to implement this.
-2. While running this from commandprompt you can not give spaces in the expression as java is going to take them as different arguments
+While running this from commandprompt you can not give spaces in the expression as java is going to take them as different arguments
